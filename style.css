@@ -1,0 +1,262 @@
+:root {
+  --oranye: #ff6b1a;
+  --gelap: #111827;
+  --krem: #fff7ed;
+  --putih: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Trebuchet MS", "Segoe UI", Arial, sans-serif;
+  line-height: 1.7;
+  color: var(--gelap);
+  background: var(--krem);
+}
+
+/* ---------- Header ---------- */
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 32px;
+  color: var(--putih);
+  background: var(--gelap);
+  border-bottom: 6px solid var(--oranye);
+}
+
+.judul p {
+  margin: 0;
+  color: #fdba74;
+  font-size: 0.95rem;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+nav a {
+  color: var(--putih);
+  text-decoration: none;
+  font-weight: 700;
+  padding: 8px 16px;
+  border-radius: 6px;
+}
+
+nav a:hover,
+nav a:focus {
+  color: var(--gelap);
+  background: var(--oranye);
+  outline: none;
+}
+
+/* ---------- Konten ---------- */
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+section {
+  padding: 28px;
+  background: var(--putih);
+  border: 3px solid var(--gelap);
+  border-radius: 12px;
+  box-shadow: 8px 8px 0 var(--oranye);
+}
+
+h2 {
+  margin: 0 0 12px;
+  font-size: 1.35rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+p {
+  margin: 0 0 12px;
+}
+
+strong {
+  color: var(--oranye);
+}
+
+/* Tentang: foto di kanan */
+#tentang {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 28px;
+}
+
+#tentang img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border: 4px solid var(--gelap);
+  border-radius: 8px;
+  transform: rotate(2deg);
+}
+
+#tentang div {
+  flex: 1 1 280px;
+}
+
+#tentang a {
+  display: inline-block;
+  padding: 8px 16px;
+  color: var(--putih);
+  font-weight: 700;
+  text-decoration: none;
+  background: var(--gelap);
+  border-radius: 6px;
+}
+
+#tentang a:hover,
+#tentang a:focus {
+  color: var(--gelap);
+  background: var(--oranye);
+  outline: none;
+}
+
+/* Rundown: dua kartu, terang dan gelap */
+#rundown {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  box-shadow: none;
+  padding: 0;
+  background: transparent;
+  border: none;
+}
+
+.kartu {
+  flex: 1 1 280px;
+  padding: 24px;
+  border: 3px solid var(--gelap);
+  border-radius: 12px;
+}
+
+.terang {
+  background: var(--oranye);
+  color: var(--gelap);
+}
+
+.gelap {
+  background: var(--gelap);
+  color: var(--putih);
+}
+
+.gelap li::marker {
+  color: var(--oranye);
+  font-weight: 700;
+}
+
+li {
+  margin-bottom: 6px;
+}
+
+/* ---------- Formulir ---------- */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.baris {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.kolom {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 240px;
+  gap: 6px;
+}
+
+label {
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select {
+  padding: 11px 12px;
+  font-size: 1rem;
+  color: var(--gelap);
+  background: var(--putih);
+  border: 2px solid var(--gelap);
+  border-radius: 6px;
+}
+
+input:focus,
+select:focus {
+  outline: 3px solid var(--oranye);
+  outline-offset: 1px;
+}
+
+.setuju {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.setuju label {
+  font-weight: 400;
+}
+
+button {
+  padding: 14px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--gelap);
+  background: var(--oranye);
+  border: 3px solid var(--gelap);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover,
+button:focus {
+  color: var(--putih);
+  background: var(--gelap);
+  outline: none;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  padding: 24px 20px;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--gelap);
+  background: var(--oranye);
+}
+
+footer p {
+  margin: 0;
+}

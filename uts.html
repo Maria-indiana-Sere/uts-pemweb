@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Liga Voli Antar Fakultas 2026</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <div class="judul">
+        <h1>Liga Voli Antar Fakultas 2026</h1>
+        <p>Satu bola, satu tim, satu juara</p>
+      </div>
+      <nav>
+        <a href="#tentang">Info Liga</a>
+        <a href="#rundown">Syarat &amp; Alur</a>
+        <a href="#daftar">Gabung Tim</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="tentang">
+        <img src="images/kegiatan.jpeg" alt="Dua pemain voli melompat memblok smash di depan net">
+        <div>
+          <h2>Tentang Liga</h2>
+          <p>
+            Liga ini jadi ajang adu <strong>strategi dan kekompakan</strong>
+            antar fakultas. Semua pertandingan berjalan <em>seru, jujur, dan
+            sportif</em>.
+          </p>
+          <p>
+            Lapangan resmi berukuran 18 m x 9 m. Net dipasang setinggi 2,43 m
+            untuk putra dan 2,24 m untuk putri.
+          </p>
+          <a href="https://id.wikipedia.org/wiki/Bola_voli" target="_blank" rel="noreferrer">Pelajari peraturan dasar bola voli</a>
+        </div>
+      </section>
+
+      <section id="rundown">
+        <div class="kartu terang">
+          <h2>Syarat Peserta</h2>
+          <ul>
+            <li>Mahasiswa aktif Universitas Widya Gama Malang</li>
+            <li>Membawa kartu tanda mahasiswa</li>
+            <li>Siap bermain dengan sepatu olahraga</li>
+          </ul>
+        </div>
+        <div class="kartu gelap">
+          <h2>Alur Pendaftaran</h2>
+          <ol>
+            <li>Lengkapi data diri</li>
+            <li>Tunggu verifikasi panitia</li>
+            <li>Kirim formulir pendaftaran</li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="daftar">
+        <h2>Formulir Pendaftaran</h2>
+        <form action="#" method="post">
+          <div class="baris">
+            <div class="kolom">
+              <label for="nama">Nama Lengkap</label>
+              <input id="nama" name="nama" type="text" required>
+            </div>
+            <div class="kolom">
+              <label for="surel">Surel</label>
+              <input id="surel" name="surel" type="email" required>
+            </div>
+          </div>
+
+          <div class="baris">
+            <div class="kolom">
+              <label for="telepon">No. WhatsApp</label>
+              <input id="telepon" name="telepon" type="tel">
+            </div>
+            <div class="kolom">
+              <label for="posisi">Posisi Bermain</label>
+              <select id="posisi" name="posisi">
+                <option value="spiker">Spiker</option>
+                <option value="setter">Setter</option>
+                <option value="libero">Libero</option>
+                <option value="blocker">Blocker</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="setuju">
+            <input id="setuju" name="setuju" type="checkbox" required>
+            <label for="setuju">Saya siap mengikuti aturan pertandingan</label>
+          </div>
+
+          <button type="submit">Daftar Sekarang</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Liga Voli Antar Fakultas · Panitia Pemrograman Web</p>
+    </footer>
+  </body>
+</html>
